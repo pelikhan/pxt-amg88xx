@@ -2,7 +2,7 @@ namespace amg88xx {
     // Registers are defined below in the class. These are possible register values.
     // Operating Modes
     // pylint: disable=bad-whitespace
-    const _NORMAL_MODE = 0x00
+    const _NORMAL_MODE = 0x00;
     const _SLEEP_MODE = 0x10
     const _STAND_BY_60 = 0x20
     const _STAND_BY_10 = 0x21

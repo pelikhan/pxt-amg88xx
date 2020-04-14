@@ -4,6 +4,8 @@
 
 > Open this page at [https://pelikhan.github.io/pxt-amg88xx/](https://pelikhan.github.io/pxt-amg88xx/)
 
+This library is a port of [Adafruit CircuitPython AMG88xx](https://github.com/adafruit/Adafruit_CircuitPython_AMG88xx)/
+
 ## Use this extension
 
 This repository can be added as an **extension** in MakeCode.
@@ -20,13 +22,6 @@ To edit this repository in MakeCode.
 * open [https://arcade.makecode.com/](https://arcade.makecode.com/)
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/pelikhan/pxt-amg88xx** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/pelikhan/pxt-amg88xx/raw/master/.github/makecode/blocks.png)
 
 #### Metadata (used for search, rendering)
 

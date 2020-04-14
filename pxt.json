@@ -2,16 +2,19 @@
     "name": "pxt-amg88xx",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "core": "*",
+        "pxt-register": "github:pelikhan/pxt-register#v0.0.1"
     },
     "files": [
-        "main.ts",
         "README.md",
         "amg88xx.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
+    "testDependencies": {
+        "device": "*"
+    },
     "supportedTargets": [
         "arcade"
     ],

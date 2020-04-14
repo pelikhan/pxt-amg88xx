@@ -93,21 +93,21 @@ namespace amg88xx {
         * Temperatures are stored in a two dimensional list where the first index is the row and
         * the second is the column. The first row is on the side closest to the writing on the sensor.
         */
-        pixels(): Buffer {
-            const retbuf = pins.createBuffer(64) 
-            let buf = pins.createBuffer(3)
+        pixels(): number[] {
+            const retbuf: number[] = []
+            const buf = pins.createBuffer(3)
             const i2c = this.i2c_device.begin()
             for (let row = 0; row < _PIXEL_ARRAY_HEIGHT; ++row) {
                 for (let col = 0; col < _PIXEL_ARRAY_WIDTH; ++col) {
                     let i = row * _PIXEL_ARRAY_HEIGHT + col
                     buf[0] = _PIXEL_OFFSET + (i << 1)
                     register.write_then_readinto(i2c, buf, buf, 1, 1)
-                    let raw = buf[2] << 8 | buf[1]
+                    const raw = buf[2] << 8 | buf[1]
                     retbuf[row * _PIXEL_ARRAY_HEIGHT + col] = _twos_comp_to_float(raw) * _PIXEL_TEMP_CONVERSION
                 }
             }
             i2c.end()
             return retbuf;
-        }   
+        }
     }
 }

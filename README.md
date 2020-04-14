@@ -4,7 +4,8 @@
 
 > Open this page at [https://pelikhan.github.io/pxt-amg88xx/](https://pelikhan.github.io/pxt-amg88xx/)
 
-This library is a port of [Adafruit CircuitPython AMG88xx](https://github.com/adafruit/Adafruit_CircuitPython_AMG88xx)/
+This library is a port of [Adafruit CircuitPython AMG88xx](https://github.com/adafruit/Adafruit_CircuitPython_AMG88xx)
+for MakeCode.
 
 ## Use this extension
 
